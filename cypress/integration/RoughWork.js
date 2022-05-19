@@ -10,17 +10,14 @@ describe('Login Test Cases', () => {
            cy.get('.button').click();
            cy.wait(3000);
            cy.get('h5').should('have.text',' Dashboard ');
-           cy.get('a.ng-tns-c178-8 > .menu-icon > svg').click();
-           cy.get(':nth-child(1) > #value > .select-button').click();
-           cy.xpath('/html/body/app-root/app-home/app-layout/nb-layout/div[2]/div/div/nb-option-list/ul/nb-option[3]').click();
-           cy.get(':nth-child(2) > #value > .select-button').click();
-           cy.xpath('/html/body/app-root/app-home/app-layout/nb-layout/div[2]/div/div/nb-option-list/ul/nb-option[3]').click();
-           cy.get('.input-full-width').click();
+           cy.get('a.ng-tns-c178-5 > .menu-icon > svg').click();
            cy.get('.input-full-width').type('  ');
-           cy.get('.input-full-width').type('Test');
-           cy.get('.nb-form-field-size-medium > .ng-star-inserted > nb-icon > .eva > [data-name="Layer 2"] > g > rect').click();
-   
-       
+           cy.get('.nb-form-field-addon > nb-icon > .eva > [data-name="Layer 2"] > g > rect').click();
+           cy.get('.input-full-width').type('test');
+           cy.get('.nb-form-field-addon > nb-icon > .eva > [data-name="Layer 2"] > g > rect').click();
+           cy.wait(2000);
+           cy.get('#value > .select-button').click();
+           cy.xpath('//*[@id="nb-option-0"]').click();
        });
        
 
