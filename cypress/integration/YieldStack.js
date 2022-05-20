@@ -131,4 +131,38 @@ describe('Login Test Cases', () => {
         
         
         });
+
+         it('Asset Management', () => {
+        cy.visit('https://portaluat.yieldstack.com/login');
+        cy.get('.col-12 > :nth-child(1) > .input-full-width').type('awais.ahmed+admin@lbhpartners.com');
+        cy.get('.nb-form-control-container > .input-full-width').type('Qqqqqq1!');
+        cy.get('.button').click();
+        cy.get('.success-link-text').should('have.text' , ' Please enter the 6-digit code we have sent to your registered mobile device. ');
+        cy.get('.button').click();
+        cy.wait(3000);
+        cy.get('h5').should('have.text',' Dashboard ');
+        cy.get('a.ng-tns-c178-11 > .menu-icon > svg').click();
+        cy.get('a.ng-tns-c178-12 > .menu-icon > .svg-inline--fa').click();
+        cy.get('.p-datatable-tbody > :nth-child(1) > :nth-child(13)').scrollIntoView().click();
+        cy.get(':nth-child(3) > .tab-link').click();
+        cy.xpath('/html/body/app-root/app-home/app-layout/nb-layout/div/div/div/div/div/nb-layout-column/app-asset-details/div[2]/div/nb-card/nb-card-body/nb-tabset/nb-tab[3]/div/app-asset-documents/div[1]/div/div[1]/nb-select').click();
+        cy.xpath('/html/body/app-root/app-home/app-layout/nb-layout/div[2]/div/div/nb-option-list/ul/nb-option[2]').click();
+        
+        it('[Admin] User Management (Create New User + Login with New User Account)', () => {
+            cy.visit('https://portaluat.yieldstack.com/login');
+            cy.get('.col-12 > :nth-child(1) > .input-full-width').type('awais.ahmed+admin@lbhpartners.com');
+            cy.get('.nb-form-control-container > .input-full-width').type('Qqqqqq1!');
+            cy.get('.button').click();
+            cy.get('.success-link-text').should('have.text' , ' Please enter the 6-digit code we have sent to your registered mobile device. ');
+            cy.get('.button').click();
+            cy.wait(3000);
+            cy.get('h5').should('have.text',' Dashboard ');
+            cy.get('a.ng-tns-c178-8 > .menu-icon > svg').click();
+            cy.get('.float-right').click();
+            
+            
+            
+            });   
+        
+        });
     });
