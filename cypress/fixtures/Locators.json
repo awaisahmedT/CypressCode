@@ -1,0 +1,24 @@
+{
+
+"LoginEmail":".col-12 > :nth-child(1) > .input-full-width",
+"LoginPass":".nb-form-control-container > .input-full-width",
+"Xpath1":"'/html/body/app-root/app-home/app-layout/nb-layout/div[2]/div/div/nb-option-list/ul/nb-option[1]'",
+"Xpath2":"'/html/body/app-root/app-home/app-layout/nb-layout/div[2]/div/div/nb-option-list/ul/nb-option[7]",
+"Xpath3":"'/html/body/app-root/app-home/app-layout/nb-layout/div[2]/div/div/nb-option-list/ul/nb-option[2]'",
+"Xpath4":"'/html/body/app-root/app-home/app-layout/nb-layout/div[2]/div/div/nb-option-list/ul/nb-option[1]'",
+"Xpath5":"'/html/body/app-root/app-home/app-layout/nb-layout/div[2]/div/div/nb-option-list/ul/nb-option[3]'",
+"Xpath6":"'/html/body/app-root/app-home/app-layout/nb-layout/div[1]/div/div/div/div/nb-layout-column/app-investors/div[2]/div[1]/div[3]/nb-form-field/div[2]/nb-icon/svg/g/g/rect'",
+"Xpath7":"/html/body/app-root/app-home/app-layout/nb-layout/div/div/div/div/div/nb-layout-column/app-asset-details/div[2]/div/nb-card/nb-card-body/nb-tabset/nb-tab[3]/div/app-asset-documents/div[1]/div/div[1]/nb-select/button",
+"Xpath8":"/html/body/app-root/app-home/app-layout/nb-layout/div[2]/div/div/nb-option-list/ul/nb-option[2]",
+"Xpath9":"'/html/body/app-root/app-home/app-layout/nb-layout/div[1]/div/div/div/div/nb-layout-column/app-users/div[3]/nb-card/nb-card-body/p-table/div/div/table/tbody/tr[10]/td[9]/button[1]/nb-icon/svg'",
+"SearchDoc":"'/html/body/app-root/app-home/app-layout/nb-layout/div/div/div/div/div/nb-layout-column/app-documents/app-investor-documents/div[1]/div/div[2]/nb-form-field/div[2]/nb-icon/svg/g/g/rect'",
+"SearchPayment":"'/html/body/app-root/app-home/app-layout/nb-layout/div/div/div/div/div/nb-layout-column/app-investor-payments/div[2]/div[1]/div[4]/nb-form-field/div[2]/nb-icon/svg/g/g/path'",
+"Search":"'/html/body/app-root/app-home/app-layout/nb-layout/div[1]/div/div/div/div/nb-layout-column/app-investors/div[2]/div[1]/div[3]/nb-form-field/div[1]/input'",
+"InvestmentOpen":"a.ng-tns-c178-4 > .menu-icon",
+"ViewInvestment":".title > .ng-star-inserted",
+"Xpath10":"/html/body/app-root/app-home/app-layout/nb-layout/div[1]/div/div/div/div/nb-layout-column/app-investors/div[2]/div[1]/div[3]/nb-form-field/div[1]/input",
+"EditInvestment":":nth-child(1) > nb-card-body > .text-center > .appearance-filled"
+
+
+
+}
