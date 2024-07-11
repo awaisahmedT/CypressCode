@@ -5,7 +5,8 @@ describe('HMD Website Tests', () => {
   it('HMD Homepage', () => {
     //Verify the website is accessible
     cy.visit('https://www.hmd.com/en_pk');
-    cy.get('#modalAcceptAllBtn').click(); // Accept cookies
+    // Accept cookies
+    cy.get('#modalAcceptAllBtn').click(); 
     
     //TC: Verify all the header links are accessible
     cy.get(':nth-child(1) > .css-15kcnfm').should('have.attr', 'href').and('include', '/en_pk/smartphones' );
@@ -63,7 +64,8 @@ describe('HMD Website Tests', () => {
 
   it('Contact-Us', () => {
     cy.visit(productPageUrl);
-    cy.get('#modalAcceptAllBtn').click(); // Accept cookies
+    // Accept cookies
+    cy.get('#modalAcceptAllBtn').click(); 
     // Smooth scroll to the bottom of the page
     cy.get('.css-1s6mtog').click();
     cy.get('#navigation-secondary-menu-drawer > a').click();
