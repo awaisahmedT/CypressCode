@@ -12,10 +12,14 @@ describe('Marketing TCs', () => {
     //TC#3: Verify all the header links are accessible
     cy.get('.menu-link-wrap > [href="/lesinhoud"]').should('have.attr', 'href').and('include', '/lesinhoud');
     cy.get('.menu-link-wrap > [href="/hoe-werkt-het"]').should('have.attr', 'href').and('include', '/hoe-werkt-het');
-    //cy.get(':nth-child(3) > .css-15kcnfm').should('have.attr', 'href').and('include', '/en_pk/tablets');
-    //cy.get(':nth-child(4) > .css-15kcnfm').should('have.attr', 'href').and('include', '/en_pk/accessories');
-
-
+    
+    //TC#4: Verify that the Join button is visible and working
+    cy.get('.menu-link-wrap > .link-block')
+    .should('contain','Meld je aan')
+    .should('have.attr', 'href')
+    
+    //TC#5: Verify the JOIN popup appears when user clicks on it
+    cy.get('.menu-link-wrap > .link-block > .btn-label-wrapper > div').click();
 
   })
 })
